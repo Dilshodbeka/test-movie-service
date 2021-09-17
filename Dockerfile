@@ -5,7 +5,7 @@ WORKDIR /movie_app
 COPY ./package.json ./package-lock.json ./
 RUN npm install
 
-RUN mkdir ./src
-COPY ./src ./src
+RUN mkdir .
+COPY . .
 
 CMD ["node", "./movie.js"]
