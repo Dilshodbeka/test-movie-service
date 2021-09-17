@@ -1,0 +1,12 @@
+version: "3.2"
+services:
+  app:
+    command: node movie.js
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - published: ${PORT:-3000}
+        target: 3000
+    volumes:
+      - .:/app/
