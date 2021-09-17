@@ -13,9 +13,7 @@ There two endpoints :
 
   - User must be authorized and have 'role'
   - Basic role can create 5 per month , after 5 gets message :
-	  {
-   		"youRole": "Your role is basic. Please, change Premium"
-	  }
+	  { "youRole": "Your role is basic. Please, change Premium" }
   - Premium role creates unlimited
 
 2 GET /movies
